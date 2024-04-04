@@ -5,6 +5,9 @@ export function palyaLetrehoz() {
   for (let index = 0; index < 9; index++) {
     LISTA[index] = lampaAlaphelyzet();
   }
+  if (LISTA.indexOf(true) < 0) {
+    LISTA[Math.floor(Math.random() * 8 + 0)] = true;
+  }
   return LISTA;
 }
 

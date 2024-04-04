@@ -12,5 +12,10 @@ export function kiiratas(szamlalo) {
   const ELEM = $("#lekapcsolt");
   ELEM.html(szamlalo);
   console.log(szamlalo);
-  console.log(ELEM);
+}
+export function ujJatek() {
+  const GOMB = $("button");
+  GOMB.on("click", function () {
+    window.location.reload();
+  });
 }
