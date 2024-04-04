@@ -1,3 +1,5 @@
+import { lampaAlaphelyzet } from "./bg.js";
+
 export function palyaLetrehoz() {
   const LISTA = [];
   for (let index = 0; index < 9; index++) {
