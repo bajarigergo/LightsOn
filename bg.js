@@ -4,9 +4,9 @@ export function lampaAlaphelyzet() {
 }
 export function lampaValt() {
   const ELEM = $(".lampak");
-  for (let index = 0; index < ELEM.length; index++) {
-    ELEM[index].on("click", function () {
-      ELEM.toggleClass("eg");
-    });
-  }
+
+  ELEM.on("click", function (event) {
+    console.log(event.target.id);
+    $(event.target).toggleClass("eg");
+  });
 }

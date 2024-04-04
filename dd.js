@@ -13,9 +13,9 @@ export function palyaMegjelenit(lista) {
   const TAROLO_ELEM = $(".jatekter");
   for (let index = 0; index < lista.length; index++) {
     if (lista[index]) {
-      txt += "<div class='eg lampak'></div>";
+      txt += `<div id=${index} class='eg lampak'></div>`;
     } else {
-      txt += "<div class='lampak'></div>";
+      txt += `<div id=${index} class='lampak'></div>`;
     }
   }
   TAROLO_ELEM.html(txt);
